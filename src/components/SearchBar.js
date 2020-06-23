@@ -8,10 +8,17 @@ class SearchBar extends React.Component {
         this.setState({ term: event.target.value });
     };
 
+    onFormSubmit = event => {
+        event.preventDefault();                //browser does not attempt to automatically submit the form anytime user submits it
+
+       //TODO: Make sure we call
+       //callback from parent component 
+    };
+
     render() {
         return(
             <div className="search-bar ui segment">
-                <form className="ui form">
+                <form onSubmit={this.onFormSubmit} className="ui form">
                     <div className="field">
                         <label>Video Search</label>
                         <input 
