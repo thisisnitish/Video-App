@@ -4,7 +4,7 @@ import youtube from '../apis/youtube';
 import VideoList from './VideoList';
 import VideoDetail from './VideoDetail';
 
-const KEY = 'AIzaSyCS6PI0d-fhDaIKpT8rAI2sxmZjlCoZWWU';
+const KEY = 'YOUR_YOUTUBE_API_KEY';
 
 
 class App extends React.Component {
